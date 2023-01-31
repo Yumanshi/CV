@@ -50,6 +50,22 @@ main {
     margin-bottom: 60px;
 }
 
+.parrafos {
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #e7e7e7e2;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+h4 {
+    font-size: 1.4em;
+    text-align: center;
+    background-color: #e7e7e7e2;
+    padding: 15px;
+    border-radius: 15px;
+}
+
 /* PARA EL NAV **********************************************/
 
 .items{
@@ -92,6 +108,8 @@ main {
 
 /*Se me creó una barra horizontal y no se como arreglarla....
 (Por algun motivo solo está en el header, si bajas desaparece)*/
+/*Bueno, aparentemente desapareció la barra, pero cuando lo pasas a modo 
+tablet/celu se me crea un espacio en blanco a la derecha de toda la pantalla*/
 
 .columns {
 	display: flex;
@@ -144,7 +162,7 @@ main {
 
 /* SLIDER ************************************/
 .container-slider{
-    width: 30%;
+    width: 100%;
     max-width: 900px;
     min-width: 280px;
     overflow: hidden;
