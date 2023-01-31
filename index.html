@@ -13,6 +13,9 @@
 
     <link rel="stylesheet" href="./CSS/style.css">
 
+    <!--Bustra-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -22,7 +25,7 @@
         <!------------------- NAV ------||--------->
         <!------------------------------\/--------->
 
-     <!--SANTI, fijate que el nav me queda por debajo del slider.
+    <!--SANTI, fijate que el nav me queda por debajo del slider.
     No se que mierden hacer, se me hace que es por el position relative del container-slider -->
         <nav>
             <ul class="items">
@@ -48,19 +51,19 @@
 
             <section class="columns">
 
-                <div class="container-perfil column">
+                <div class="container-margin column">
                     <img class="perfil" src="./assets/yo.jfif" alt="Foto de perfil">
                     <p>Pasión por los videojuegos</p>
                 </div>
         
-                <div class="container-resumen column">
+                <div class="container-margin column">
                     <p>Juego videojuegos desde los 3 años, y a los 19 decidí que me quería dedicar a la industria.<br>
                     Mi sueño es convertirme en Game-Director en una empresa de videojuegos AAA<br>
                     Por otro lado, también me gusta la programación en general, y me gustaría poder dedicarme a ello antes de entrar en la industria de los videojuegos</p>
                 </div>
 
         
-                <div class="container-favoritos column">
+                <div class="container-margin column">
                     <div class="container-slider">
 
                         <div class="slider" id="slider">
@@ -107,13 +110,12 @@
         <!------------------------------||--------->
         <!------------------ INFO ------||--------->
         <!------------------------------\/--------->
-        <div class="columns">
-
-            <section class="column2">
+            <section>
+                
                 <h3 id="info" class="subTitulo">Info personal</h3>
-                <div class="container-info">
-                    <img class="hojaParaLista" src="" alt="Hoja con renglones">
-                    <ul>
+                <div class="container-info info-bg">
+                    <ul class="lista">
+                        <li>Documento: 00.666.000</li>
                         <li>Nacionalidad: Asgaardiano</li>
                         <li>Dirección: Calle Falsa 123, Springfield</li>
                         <li>Telefono: 0303-456</li>
@@ -131,65 +133,41 @@
             <!------------------------------||--------->
             <!-------------- ESTUDIOS ------||--------->
             <!------------------------------\/--------->
-            <section class="column2">
+            <section>
+
                 <h3 id="estudios" class="subTitulo">Formacion y estudios</h3>
                 <div class="container-estudios">
-                    <div data-aos="fade-right" class="bg-estudios">
-                        <p><strong>Escuela Secundaria N°6 Jose Félix Bogado:</strong> Bachiller en Ciencias Naturales</p>
+                    <div data-aos="fade-right" class="estudios">
+                        <div class="text-estudios">
+                            <p><strong>Escuela Secundaria N°6 Jose Félix Bogado:</strong> Bachiller en Ciencias Naturales</p>
+                        </div>
                     </div>
                     <!------------------------------------------------------------------------------->
-                    <div data-aos="fade-left" class="bg-estudios">
-                        <p><strong>Universidad Tecnológica Nacional:</strong> 1er año de Ing. Aeronáutica <span>(Abandonado)</span></p>
+                    <div data-aos="fade-left" class="estudios">
+                        <div class="text-estudios">
+                            <p><strong>Universidad Tecnológica Nacional:</strong> 1er año de Ing. Aeronáutica <span>(Abandonado)</span></p>
+                        </div>
                     </div>
                     <!------------------------------------------------------------------------------->
-                    <div data-aos="fade-right" class="bg-estudios">
-                        <p><strong>Escuela DaVinci:</strong> "Realización integral de videojuegos</p>
+                    <div data-aos="fade-right" class="estudios">
+                        <div class="text-estudios">
+                            <p><strong>Escuela DaVinci:</strong> "Realización integral de videojuegos</p>
+                        </div>
                     </div>
                     <!------------------------------------------------------------------------------->
-                    <div data-aos="fade-left" class="bg-estudios">
-                        <p><strong>Argentina Programa 4.0</strong>, programación orientada a objetos</p>
+                    <div data-aos="fade-left" class="estudios">
+                        <div class="text-estudios">
+                            <p><strong>Argentina Programa 4.0</strong>, programación orientada a objetos</p>
+                        </div>
                     </div>
                     <!------------------------------------------------------------------------------->
-                    <div data-aos="fade-right" class="bg-estudios">
-                        <p><strong>Idiomas:</strong> Ingles <span>(Upper intermediate)</span>/ Japonés <span>(Básico)</span></p>
-                    </div>
-                    <!------------------------------------------------------------------------------->
-                    <!------------------------------------------------------------------------------->
-                    <div data-aos="fade-left" class="bg-estudios">
-                        <div>
-                            <img src="" alt="">
-                            <p>HTML</p>
-                        </div>
-                        <!--------------------------------------------------------------------------->
-                        <div>
-                            <img src="" alt="">
-                            <p>CSS</p>
-                        </div>
-                        <!--------------------------------------------------------------------------->
-                        <div>
-                            <img src="" alt="">
-                            <p>JavaScript</p>
-                        </div>
-                        <!--------------------------------------------------------------------------->
-                        <div>
-                            <img src="" alt="">
-                            <p>Construct 2</p>
-                        </div>
-                        <!--------------------------------------------------------------------------->
-                        <div>
-                            <img src="" alt="">
-                            <p>Word</p>
-                        </div>
-                        <!--------------------------------------------------------------------------->
-                        <div>
-                            <img src="" alt="">
-                            <p>Excel</p>
-                        </div>
+                    <div data-aos="fade-right" class="estudios">
+                        <div class="text-estudios">
+                            <p><strong>Idiomas:</strong> Ingles <span>(Upper intermediate)</span>/ Japonés <span>(Básico)</span></p>
+                        </div>    
                     </div>
                 </div>
             </section>
-            
-        </div>
         <!------------------------------/\--------->
         <!-------------- ESTUDIOS ------||--------->
         <!------------------------------||--------->
@@ -202,7 +180,7 @@
         <section>
             <h3 id="experiencia" class="subTitulo">Experiencia</h3>
             <div class="container-experiencia">
-                <table>
+                <table class="trabajos">
                     <tr>
                         <th>Rubro</th>
                         <th>Empresa/Establecimiento</th>
@@ -259,31 +237,45 @@
         </div>
 
         <!--------------------------------------------------------------------------------------->
+        <!---NO ME TOMA LOS ICONOS---https://mdbootstrap.com/docs/standard/navigation/footer/ --->
+        <!--------------------------------------------------------------------------------------->
+        <!-- Grid container -->
+        <div class="container p-4 pb-0 text-center text-white">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-facebook-f"></i
+                ></a>
 
-        <div class="contact-boxes">
-            <div class="redes-izquierda">
-                <div class="conct-box">
-                    <a class="btn-box" href="" target="_blank"><p>LinkedIn</p></a>
-                </div>
-                <div class="conct-box">
-                    <a class="btn-box" href="" target="_blank"><p>GitHub</p></a>
-                </div>
-                <div class="conct-box">
-                    <a class="btn-box" href="https://www.youtube.com/watch?app=desktop&v=zu2Eaw6Ohxc" target="_blank"><p>YouTube</p></a>
-                </div>
-            </div>
-            <div class="redes-derecha">
-                <div class="conct-box">
-                    <a class="btn-box" href="" target="_blank"><p>Twitter</p></a>
-                </div>
-                <div class="conct-box">
-                    <a class="btn-box" href="" target="_blank"><p>Instagram</p></a>
-                </div>
-                <div class="conct-box">
-                    <a class="btn-box" href="" target="_blank"><p>Facebook</p></a>
-                </div>
-            </div>
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-linkedin-in"></i
+                ></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i class="fab fa-github"></i
+                ></a>
+            </section>
+            <!-- Section: Social media -->
         </div>
+        <!-- Grid container -->
 
     </footer>
     <!------------------------------/\--------->

@@ -21,6 +21,10 @@ nav{
     background-color: aquamarine;
 }
 
+main {
+    background-color: aquamarine;
+}
+
 .bgHeader{
     width: 100%;
     height: 100%;
@@ -39,7 +43,7 @@ nav{
 }
 
 .subTitulo {
-    font-size: 30px;
+    font-size: 2em;
     font-weight: bold;
     text-align: center;
     padding-top: 30px;
@@ -71,7 +75,7 @@ nav{
 /***************************************************************/
 
 .titulo {
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-weight: bold;
     text-align: center;
     margin: 0.4em;
@@ -93,12 +97,12 @@ nav{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin: 5px 0;
+	padding: 5px 0;
 }
 
 .column {
 	flex: 1;
-	border: 1px solid gray;
+	border: 1px solid gray; /*Para ver como queda nomas, desp lo borro*/
 	margin: 2px;
 	padding: 10px;
 	&:first-child { margin-left: 0; }
@@ -106,9 +110,9 @@ nav{
 }
 
 @media screen and (max-width: 990px) {
-  .columns .column {
+    .columns .column {
 		margin-bottom: 5px;
-    flex-basis: 40%;
+        flex-basis: 40%;
 		&:nth-last-child(2) {
 			margin-right: 0;
 		}
@@ -134,11 +138,9 @@ nav{
     border: 2px solid aquamarine;
 }
 
-/*.container-perfil***************************/
-
-/*.container-resumen**************************/
-
-/*.container-favoritos************************/
+.container-margin {
+    margin: 5px;
+}
 
 /* SLIDER ************************************/
 .container-slider{
@@ -200,7 +202,7 @@ nav{
 
 .column2 {
     flex: 1;
-	border: 1px solid gray;
+	border: 1px solid gray; /*Para ver como queda nomas, desp lo borro*/
 	margin: 2px;
 	padding: 10px;
 	&:first-child { margin-left: 0; }
@@ -215,22 +217,107 @@ nav{
 
 /* INFO ****************************************/
 
-.container-info{ /**//**//**//**//**//**/
-    width: 50%; /**//**//**//**//**//**/
-    margin: auto; /**//**//**//**//**//**/
-    display: flex; /**//**//**//**//**//**/
-    flex-wrap: wrap; /**//**//**//**//**//**/
-    justify-content: space-around; /**//**//**//**//**//**/
-    align-items: center; /**//**//**//**//**//**/
+.info-bg{
+    background-image: url(https://d2r9epyceweg5n.cloudfront.net/stores/254/135/products/tablas-madera1-e67b6fc5b14384459d15587177865189-1024-1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40%;
+}
+
+.container-info{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lista{
+    list-style-type: square;
+}
+
+.lista li {
+    border-bottom: solid;
+    border-width: .1em;
+    margin: .2em;
+    font-size: 1.2em;
 }
 
 /* ESTUDIOS ***********************************/
 
+.estudios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8cae1a69-dfc8-4fad-905a-423707b8a2a7/dclt3xu-b265d920-18b5-4517-9723-539b1f847338.png/v1/fill/w_1024,h_512,q_80,strp/flag_of_the_roman_empire_by_vetlejacob_dclt3xu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvOGNhZTFhNjktZGZjOC00ZmFkLTkwNWEtNDIzNzA3YjhhMmE3XC9kY2x0M3h1LWIyNjVkOTIwLTE4YjUtNDUxNy05NzIzLTUzOWIxZjg0NzMzOC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.zovRBOhRqZsBLjiDTvTSu7QqayawgZEJoat_wnAv5yU);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.289);
+    -moz-box-shadow: 0px 0px 40px 10px rgba(0,0,0,0.75);
+}
 
+.text-estudios{
+    width: 400px;
+    min-width: 200px;
+    margin-inline: 20px;
+    background-color: #e7e7e7e2;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.text-estudios strong{
+    font-size: 1.4em;
+    color: #2d2d2d;
+}
+
+.text-estudios p{
+    font-size: 1.2em;
+    color: #424242;
+}
+
+.text-estudios span {
+    color: royalblue;
+}
 
 /* EXPERIENCIA ***************************************/
 
+.container-experiencia {
+    padding-bottom: 3em;
+}
 
+.trabajos {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+    background-color: white;
+}
+
+.trabajos td, .trabajos th {
+    padding: 8px;
+}
+
+.trabajos tr:nth-child(even){background-color: #f2f2f2;}
+
+.trabajos tr:hover {background-color: #ddd;}
+
+.trabajos th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
 
 /* FOOTER ********************************************/
 
@@ -283,5 +370,3 @@ footer h3 {
     background-color: rgb(89, 198, 212);
     transition: 300ms ease-out background-color;
 }
-
-/* CONTACTO *********************************************/
