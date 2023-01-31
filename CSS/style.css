@@ -198,23 +198,6 @@ main {
     left: 10px;
 }
 
-/*Flow para Info y Estudios, utilizando parte del usado en inicio*/
-
-.column2 {
-    flex: 1;
-	border: 1px solid gray; /*Para ver como queda nomas, desp lo borro*/
-	margin: 2px;
-	padding: 10px;
-	&:first-child { margin-left: 0; }
-}
-
-@media screen and (max-width: 575px) {
-	.columns .column2 {
-		flex-basis: 100%;
-		margin: 0 0 5px 0;
-	}
-}
-
 /* INFO ****************************************/
 
 .info-bg{
