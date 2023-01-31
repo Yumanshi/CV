@@ -18,7 +18,7 @@ header{
 nav{
     position: sticky;
     top: 0;
-    background-color: burlywood;
+    background-color: aquamarine;
 }
 
 .bgHeader{
@@ -38,6 +38,14 @@ nav{
     z-index: -1;
 }
 
+.subTitulo {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+
 /* PARA EL NAV **********************************************/
 
 .items{
@@ -48,6 +56,7 @@ nav{
     list-style: none;
     padding: 7px;
 }
+
 .item{
     margin: 7px;
     font-size: 20px;
@@ -55,22 +64,83 @@ nav{
     padding: 10px;
     transition: 300ms ease-out background-color;
     cursor: pointer;
-    background: aquamarine;
-    color: rgb(32, 32, 32);
+    background: blueviolet;
+    color: aquamarine; /*No me toma el color, se suporpone el azul del link*/
     border-radius: 10px;
+}
+/***************************************************************/
+
+.titulo {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.4em;
+    padding: 0.2em;
 }
 
 /* INICIO **************************************/
 
-/*
-.container-perfil
+.wrapper {
+	padding: 5px;
+	max-width: 95%;
+	margin: 20px auto;
+}
 
-.container-resumen
+/*Se me creó una barra horizontal y no se como arreglarla....
+(Por algun motivo solo está en el header, si bajas desaparece)*/
 
-.container-favoritos
-*/
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
 
-/* SLIDER ***********************************/
+.column {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }	
+}
+
+@media screen and (max-width: 990px) {
+  .columns .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
+.perfil {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid aquamarine;
+}
+
+/*.container-perfil***************************/
+
+/*.container-resumen**************************/
+
+/*.container-favoritos************************/
+
+/* SLIDER ************************************/
 .container-slider{
     width: 30%;
     max-width: 900px;
@@ -126,6 +196,23 @@ nav{
     left: 10px;
 }
 
+/*Flow para Info y Estudios, utilizando parte del usado en inicio*/
+
+.column2 {
+    flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+}
+
+@media screen and (max-width: 575px) {
+	.columns .column2 {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
 /* INFO ****************************************/
 
 .container-info{ /**//**//**//**//**//**/
@@ -144,6 +231,12 @@ nav{
 /* EXPERIENCIA ***************************************/
 
 
+
+/* FOOTER ********************************************/
+
+footer h3 {
+    color: aquamarine;
+}
 
 /* FORMULARIO ****************************************/
 
@@ -190,3 +283,5 @@ nav{
     background-color: rgb(89, 198, 212);
     transition: 300ms ease-out background-color;
 }
+
+/* CONTACTO *********************************************/
