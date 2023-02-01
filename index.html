@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum Vitae F.Z.</title>
+
+    <link rel="stylesheet" href="./CSS/all.min.css">
+
+    <!--Bustra-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!--Link para el fade de estudios-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -12,9 +18,6 @@
     <link rel="stylesheet" href="./CSS/normalize.css">
 
     <link rel="stylesheet" href="./CSS/style.css">
-
-    <!--Bustra-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
 </head>
 
@@ -25,8 +28,6 @@
         <!------------------- NAV ------||--------->
         <!------------------------------\/--------->
 
-    <!--SANTI, fijate que el nav me queda por debajo del slider.
-    No se que mierden hacer, se me hace que es por el position relative del container-slider -->
         <nav>
             <ul class="items">
                 <li class="item"><a href="#inicio">INICIO</a></li>
@@ -51,19 +52,17 @@
 
             <section class="columns">
 
-                <div class="container-margin column">
+                <div class="container-margin column container-photo">
                     <img class="perfil" src="./assets/yo.jfif" alt="Foto de perfil">
                     <p class="parrafos"><strong>Pasión por los videojuegos</strong></p>
                 </div>
         
-                <div class="container-margin column">
+                <div class="container-margin column container-biography">
                     <p class="parrafos">Juego videojuegos desde los 3 años, y a los 19 decidí que me quería dedicar a la industria.<br>
                     Mi sueño es convertirme en Game-Director en una empresa de videojuegos AAA<br>
                     Por otro lado, también me gusta la programación en general, y me gustaría poder dedicarme a ello antes de entrar al mercado de los videojuegos</p>
                 </div>
 
-                <!-- Cuando achicas la pantalla a table/celu, se estira el div, pero no el head
-                Entonces el slider se me superpone con lo que está en el main-->
                 <div class="container-margin column">
                     <div class="container-slider">
 
@@ -152,7 +151,7 @@
                     <!------------------------------------------------------------------------------->
                     <div data-aos="fade-right" class="estudios">
                         <div class="text-estudios">
-                            <p><strong>Escuela DaVinci:</strong> "Realización integral de videojuegos</p>
+                            <p><strong>Escuela DaVinci:</strong> "Realización integral de videojuegos"</p>
                         </div>
                     </div>
                     <!------------------------------------------------------------------------------->
@@ -204,7 +203,7 @@
                         <td>Lotería</td>
                         <td>Agencia de Quiniela Pepe Grillo 2</td>
                         <td>Mayo 2017 - Septiembre 2017</td>
-                        <td>Atenció al público</td>
+                        <td>Atención al público</td>
                     </tr>
                 </table>
             </div>
@@ -237,40 +236,37 @@
             </form>
         </div>
 
-        <!--------------------------------------------------------------------------------------->
-        <!---NO ME TOMA LOS ICONOS---https://mdbootstrap.com/docs/standard/navigation/footer/ --->
-        <!--------------------------------------------------------------------------------------->
         <!-- Grid container -->
         <div class="container p-4 pb-0 text-center text-white">
             <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"
                     ><i class="fab fa-facebook-f"></i
                 ></a>
 
                 <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/home?lang=es" role="button"
                     ><i class="fab fa-twitter"></i
                 ></a>
 
                 <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/watch?v=GQHIzuqD3-4" role="button"
                     ><i class="fab fa-google"></i
                 ></a>
 
                 <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/draken_yumanshi/" role="button"
                     ><i class="fab fa-instagram"></i
                 ></a>
 
                 <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/facundo-zubillaga-paz-650296161/" role="button"
                     ><i class="fab fa-linkedin-in"></i
                 ></a>
 
                 <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Yumanshi" role="button"
                     ><i class="fab fa-github"></i
                 ></a>
             </section>

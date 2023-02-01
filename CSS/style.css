@@ -19,11 +19,32 @@ nav{
     position: sticky;
     top: 0;
     background-color: aquamarine;
+    z-index: 1;
 }
 
 main {
     background-color: aquamarine;
 }
+
+/******************************************************/
+
+a{
+    text-decoration: none;
+        color: aquamarine;
+    }
+
+.container-photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-biography{
+    display: flex;
+    align-items: center;
+}
+
+/******************************************************/
 
 .bgHeader{
     width: 100%;
@@ -53,7 +74,7 @@ main {
 .parrafos {
     font-size: 1.2em;
     text-align: center;
-    background-color: #e7e7e7e2;
+    background-color: #e7e7e762;
     padding: 15px;
     border-radius: 15px;
 }
@@ -61,9 +82,10 @@ main {
 h4 {
     font-size: 1.4em;
     text-align: center;
-    background-color: #e7e7e7e2;
+    background-color: #e7e7e762;
     padding: 15px;
     border-radius: 15px;
+    margin-top: 30px;
 }
 
 /* PARA EL NAV **********************************************/
@@ -85,7 +107,7 @@ h4 {
     transition: 300ms ease-out background-color;
     cursor: pointer;
     background: blueviolet;
-    color: aquamarine; /*No me toma el color, se suporpone el azul del link*/
+    color: aquamarine;
     border-radius: 10px;
 }
 /***************************************************************/
@@ -106,11 +128,6 @@ h4 {
 	margin: 20px auto;
 }
 
-/*Se me creó una barra horizontal y no se como arreglarla....
-(Por algun motivo solo está en el header, si bajas desaparece)*/
-/*Bueno, aparentemente desapareció la barra, pero cuando lo pasas a modo 
-tablet/celu se me crea un espacio en blanco a la derecha de toda la pantalla*/
-
 .columns {
 	display: flex;
 	flex-flow: row wrap;
@@ -120,7 +137,6 @@ tablet/celu se me crea un espacio en blanco a la derecha de toda la pantalla*/
 
 .column {
 	flex: 1;
-	border: 1px solid gray; /*Para ver como queda nomas, desp lo borro*/
 	margin: 2px;
 	padding: 10px;
 	&:first-child { margin-left: 0; }
